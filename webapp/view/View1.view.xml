@@ -33,10 +33,12 @@
 	</VBox>
 
 	<Button id="_IDGenButton1" text="Criar" press="onCreate"> </Button>
+	<Button id="_IDGenButton2" text="Delete" press="onDelete"> </Button>
+	<Button id="_IDGenButton3" text="Update" press="onUpdate"> </Button>
 
 
         <Table id="idTableAluno"		
-		items="{/AlunoFioriSet}">
+		items="{/AlunoFioriSet}" mode="SingleSelect">
 		<columns>
 			<Column id="_IDGenColumn1">
 				<Text id="_IDGenText1" text="{i18n>lblusuario}" />
